@@ -9,14 +9,14 @@ function wiredep(grunt) {
   });
 }
 
-function npm-wiredep(grunt) {
-  grunt.registerMultiTask('npm-wiredep', 'Inject NPM packages into source code.', function () {
-    this.requiresConfig(['npm-wiredep', this.target, 'src']);
+function npm_wiredep(grunt) {
+  grunt.registerMultiTask('npm_wiredep', 'Inject NPM packages into source code.', function () {
+    this.requiresConfig(['npm_wiredep', this.target, 'src']);
 
     var options = this.options(this.data);
-    require('npm-wiredep')(options);
+    require('npm_wiredep')(options);
   });
 }
 
 module.exports = wiredep;
-module.exports = npm-wiredep;
+module.exports = npm_wiredep;
