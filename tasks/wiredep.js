@@ -10,11 +10,11 @@ function wiredep(grunt) {
 }
 
 function npm_wiredep(grunt) {
-  grunt.registerMultiTask('wiredep', 'Inject NPM packages into source code.', function () {
-    this.requiresConfig(['wiredep', this.target, 'src']);
+  grunt.registerMultiTask('npm_wiredep', 'Inject NPM packages into source code.', function () {
+    this.requiresConfig(['npm_wiredep', this.target, 'src']);
 
     var options = this.options(this.data);
-    require('npm_wiredep')(options);
+    require('npm-wiredep')(options);
   });
 }
 
