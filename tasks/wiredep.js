@@ -9,4 +9,14 @@ function wiredep(grunt) {
   });
 }
 
+function npm-wiredep(grunt) {
+  grunt.registerMultiTask('npm-wiredep', 'Inject NPM packages into source code.', function () {
+    this.requiresConfig(['npm-wiredep', this.target, 'src']);
+
+    var options = this.options(this.data);
+    require('npm-wiredep')(options);
+  });
+}
+
 module.exports = wiredep;
+module.exports = npm-wiredep;

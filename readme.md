@@ -1,6 +1,6 @@
 > -
 # grunt-wiredep
-*Inject Bower packages into your source code with Grunt.*
+*Inject Bower or wiredep packages into your source code with Grunt.*
 >
 > -
 
